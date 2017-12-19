@@ -41,7 +41,7 @@ ANSWER THE FOLLOWING QUESTIONS:
 
 * Since the population standard deviation is unkown and the sample size is small, the t-test was again chosen as the most appropriate. However, the z-test returned the most significant results.
     
-**At what temperature is one's temperature considered 'abnormal'?**
+**At what value is one's temperature considered 'abnormal'?**
 
 * A look at the 95% and 99.9% confidence intervals left skepticism that abnormal human body temperature could be determined from analysis of this data.
     

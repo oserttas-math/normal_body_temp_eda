@@ -88,7 +88,7 @@ Is there a significant difference between males and females in normal temperatur
 
 ### What is the True Normal Human Body Temperature?
 
-That is a good question, but it likely isn't the conventional value of 98.6°F.
+That's a good question, but it likely isn't the conventional value of 98.6°F.
 
 There is sufficient evidence to warrant rejection of the claim that the true population mean is the conventional normal human body temperature of 98.6°F. Though this value was rejected as the true population mean, values outside the confidence interval should not be rejected as plausible normal body temperatures.
 

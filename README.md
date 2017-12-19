@@ -17,68 +17,33 @@ The mean normal body temperature was held to be 37°C or 98.6°F for more than 1
 ---
 ### Analyze a dataset of human body temperatures and employ the concepts of hypothesis testing, confidence intervals, and statistical significance. Answer the following questions:
 
-Is the distribution of body temperatures normal?
-
-       
-Is the sample size large? Are the observations independent?
-
-    
-Is the true population mean really 98.6 degrees F?
-
-* Is it best to use a one-sample or two-sample test? Why?
-
-* In this situation, is it appropriate to use the $t$ or $z$ statistic? 
-* Try using the other test. How is the result different? Why?
-
-
-Draw a small sample of size 10 from the data and repeat both tests.
-
-* Which one is the correct one to use? 
-
-* What is noticeable? What does this say about the difference in application of the $t$ and $z$ statistic?
-
-    
-At what temperature should we consider someone's temperature to be "abnormal"?
-
-    
-Is there a significant difference between males and females in normal temperature?
-
-* What test is used and why?
-
-
-### Write a story with a conclusion in the context of the original problem.
-
---- 
-
-
-## APPROACH
-Is the distribution of body temperatures normal?
+**Is the distribution of body temperatures normal?**
 
 * A CDF was constructed to determine whether the distribution of human body temperature is normal:
     
 ![CDF Confirming the Normal Distribution of Human Body Temperature](reports/figures/cdf_body_temps.png)
     
-Is the sample size large? Are the observations independent?
+**Is the sample size large? Are the observations independent?**
 
 * The length of the temperature data column was retrieved to determine the sample size, 130, which is large. The temperature observations are independent, as they are not influenced by and reveal no information about any other observation.
 
     
-Is the true population mean really 98.6 degrees F?
+**Is the true population mean really 98.6 degrees F?**
 
 * A one-sample test was used since one set of data was compared to a single value. For this situation, it was best to use a t-statistic since the population standard deviation is unknown. Though a t-test is best for small samples, it becomes similar to the z-test with large samples, so the results did not differ much using a z-statistic, which was estimated using the standard error of the mean.
         
 * In every test the p-value is significantly less than 0.01, so the null hypothesis was rejected.
 
 
-Draw a small sample of size 10 from the data and repeat both tests.
+**Draw a small sample of size 10 from the data and repeat both tests.**
 
 * Since the population standard deviation is unkown and the sample size is small, the t-test was again chosen as the most appropriate. However, the z-test returned the most significant results.
     
-At what temperature should we consider someone's temperature to be "abnormal"?
+**At what temperature should we consider someone's temperature to be "abnormal"?**
 
 * A look at the 95% and 99.9% confidence intervals left skepticism that abnormal human body temperature could be determined from analysis of this data.
     
-Is there a significant difference between males and females in normal temperature?
+**Is there a significant difference between males and females in normal temperature?**
 
 * A two-sample t-test returned a t-statistic of 2.29 and p-value of 0.024, so here too, the null hypothesis is rejected. There is a difference in human body temperatures between females and males.
 

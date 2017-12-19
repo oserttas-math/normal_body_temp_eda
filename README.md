@@ -15,7 +15,9 @@ The mean normal body temperature was held to be 37°C or 98.6°F for more than 1
 * More Information: http://www.amstat.org/publications/jse/datasets/normtemp.txt
 
 ---
-### Analyze a dataset of human body temperatures and employ the concepts of hypothesis testing, confidence intervals, and statistical significance. Answer the following questions:
+### Analyze a dataset of human body temperatures and employ the concepts of hypothesis testing, confidence intervals, and statistical significance. 
+
+ANSWER THE FOLLOWING QUESTIONS:
 
 **Is the distribution of body temperatures normal?**
 
@@ -28,7 +30,7 @@ The mean normal body temperature was held to be 37°C or 98.6°F for more than 1
 * The length of the temperature data column was retrieved to determine the sample size, 130, which is large. The temperature observations are independent, as they are not influenced by and reveal no information about any other observation.
 
     
-**Is the true population mean really 98.6 degrees F?**
+**Is the true population mean really 98.6°F?**
 
 * A one-sample test was used since one set of data was compared to a single value. For this situation, it was best to use a t-statistic since the population standard deviation is unknown. Though a t-test is best for small samples, it becomes similar to the z-test with large samples, so the results did not differ much using a z-statistic, which was estimated using the standard error of the mean.
         
@@ -39,7 +41,7 @@ The mean normal body temperature was held to be 37°C or 98.6°F for more than 1
 
 * Since the population standard deviation is unkown and the sample size is small, the t-test was again chosen as the most appropriate. However, the z-test returned the most significant results.
     
-**At what temperature should we consider someone's temperature to be "abnormal"?**
+**At what temperature is one's temperature considered 'abnormal'?**
 
 * A look at the 95% and 99.9% confidence intervals left skepticism that abnormal human body temperature could be determined from analysis of this data.
     
@@ -55,18 +57,18 @@ The mean normal body temperature was held to be 37°C or 98.6°F for more than 1
 
 That's a good question, but it likely isn't the conventional value of 98.6°F.
 
-There is sufficient evidence to warrant rejection of the claim that the true population mean is the conventional normal human body temperature of 98.6°F. Though this value was rejected as the true population mean, values outside the confidence interval should not be rejected as plausible normal body temperatures.
+There is sufficient evidence to warrant rejection of the claim that the true population mean is the conventional normal human body temperature of 98.6°F. Though this value was rejected as the true population mean, values outside the confidence interval should not be rejected as plausible normal body temperatures:
 
 ![Distribution of Temperature Means](reports/figures/pdf_temp_means.png)
 
-The difference in human body temperatures between females and males, though significant, is not extreme. Women tend to have a slightly higher body temperature.
+The difference in human body temperatures between females and males, though significant, is not extreme. Women tend to have a slightly higher body temperature:
 
 ![CDF of Female and Male Temperature Distributions](reports/figures/cdf_female_male_temps.png)
 
 
 ### And, What About the Relationship with Heart Rate?
 
-There is a significant positive correlation between human body temperature and heart rate, which seems to be more reliable the more normal the human body temperature.
+There is a significant positive correlation between human body temperature and heart rate, which seems to be more reliable the more normal the human body temperature:
 
 ![Regression Variance of Temperature and Heart Rate](reports/figures/regression_heartrate_temperature.png)
 

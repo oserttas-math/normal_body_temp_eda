@@ -39,11 +39,11 @@ ANSWER THE FOLLOWING QUESTIONS:
 
 **Draw a small sample of size 10 from the data and repeat both tests.**
 
-* Since the population standard deviation is unkown and the sample size is small, the t-test was again chosen as the most appropriate. However, the z-test returned the most significant results.
+* Since the population standard deviation is unkown and the sample size is small, the t-test was again chosen as the most appropriate. However, the z-test returned the most significant results, as it is the most sensitive of the two.
     
 **At what value is one's temperature considered 'abnormal'?**
 
-* A look at the 95% and 99.9% confidence intervals left skepticism that abnormal human body temperature could be determined from analysis of this data.
+* A look at the 95% and 99.9% confidence intervals left skepticism that abnormal human body temperature could be determined from analysis of this data. That's because looking at the confidence interval was the incorrect approach. A 95% prediction interval indicates temperatures below 96.8°F or higher than 99.7°F may be considered abnormal.
     
 **Is there a significant difference between males and females in normal temperature?**
 
@@ -57,9 +57,9 @@ ANSWER THE FOLLOWING QUESTIONS:
 
 That's a good question, but it likely isn't the conventional value of 98.6°F.
 
-There is sufficient evidence to warrant rejection of the claim that the true population mean is the conventional normal human body temperature of 98.6°F. Though this value was rejected as the true population mean, values outside the confidence interval should not be rejected as plausible normal body temperatures:
+There is sufficient evidence to warrant rejection of the claim that the true population mean is the conventional normal human body temperature of 98.6°F. Though this value was rejected as the true population mean, prediction interval indicates it is a likely value:
 
-![Distribution of Temperature Means](reports/figures/pdf_temp_means.png)
+![Distribution of Temperature Means](reports/figures/pdf_temps.png)
 
 The difference in human body temperatures between females and males, though significant, is not extreme. Women tend to have a slightly higher body temperature:
 

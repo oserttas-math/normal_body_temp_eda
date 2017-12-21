@@ -5,7 +5,7 @@ EXERCISES FOR THE SPRINGBOARD DATA SCIENCE INTENSIVE
 ---
 ### Background
 
-The mean normal body temperature was held to be 37°C or 98.6°F for more than 120 years since it was first conceptualized and reported by Carl Wunderlich in a famous 1868 book. But, is this value statistically correct?
+The mean normal body temperature was held to be 37°C or 98.6°F for more than 120 years after it was first conceptualized and reported by Carl Wunderlich in a famous 1868 book. But, is this value statistically correct?
 
 ---
 ### The Data
@@ -27,19 +27,20 @@ ANSWER THE FOLLOWING QUESTIONS:
     
 **Is the sample size large? Are the observations independent?**
 
-* The length of the temperature data column was retrieved to determine the sample size, 130, which is large. The temperature observations are independent, as they are not influenced by and reveal no information about any other observation.
+* The length of the temperature data column was retrieved to determine the sample size, 130, which is large. The temperature observations are independent, as each value for temperature represents a distinct measure of such.
 
     
 **Is the true population mean really 98.6°F?**
 
 * A one-sample test was used since one set of data was compared to a single value. For this situation, it was best to use a t-statistic since the population standard deviation is unknown. Though a t-test is best for small samples, it becomes similar to the z-test with large samples, so the results did not differ much using a z-statistic, which was estimated using the standard error of the mean.
+
         
-* In every test the p-value is significantly less than 0.01, so the null hypothesis was rejected.
+* In every test the p-value is markedly less than the chosen significance level of 0.01, so the null hypothesis that the true population mean is equal to the conventional mean (98.6°F) was rejected.
 
 
-**Draw a small sample of size 10 from the data and repeat both tests.**
+**Draw a sample of size 10 from the data and repeat both tests.**
 
-* Since the population standard deviation is unkown and the sample size is small, the t-test was again chosen as the most appropriate. However, the z-test returned the most significant results, as it is the most sensitive of the two.
+* Since the population standard deviation is unkown and the sample size is small, the t-test was chosen again as the most appropriate. However, the z-test returned the most significant results, as it is the most sensitive of the two.
     
 **At what value is one's temperature considered 'abnormal'?**
 
@@ -47,7 +48,7 @@ ANSWER THE FOLLOWING QUESTIONS:
     
 **Is there a significant difference between males and females in normal temperature?**
 
-* A two-sample t-test returned a t-statistic of 2.29 and p-value of 0.024, so here too, the null hypothesis is rejected. There is a difference in human body temperatures between females and males.
+* A two-sample t-test returned a t-statistic of 2.29 and p-value of 0.024, so here too, the null hypothesis was rejected. There is a difference in human body temperatures between females and males.
 
 
 
@@ -55,9 +56,9 @@ ANSWER THE FOLLOWING QUESTIONS:
 
 ### What is the True Normal Human Body Temperature?
 
-That's a good question, but it likely isn't the conventional value of 98.6°F.
+That's a good question, but it likely isn't the conventional value of 98.6°F. The average temperature from this study is 98.2°F, so perhaps that is the true normal human body temperature. 
 
-There is sufficient evidence to warrant rejection of the claim that the true population mean is the conventional normal human body temperature of 98.6°F. Though this value was rejected as the true population mean, prediction interval indicates it is a likely value:
+Nonetheless, there is sufficient evidence to warrant rejection of the claim that the true population average is the conventional normal human body temperature of 98.6°F. Though it's a likely value:
 
 ![Distribution of Temperature Means](reports/figures/pdf_temps.png)
 
@@ -68,7 +69,7 @@ The difference in human body temperatures between females and males, though sign
 
 ### And, What About the Relationship with Heart Rate?
 
-There is a significant positive correlation between human body temperature and heart rate, which seems to be more reliable the more normal the human body temperature:
+There certainly appears to be a relationship. In fact, there is a positive correlation between human body temperature and heart rate:
 
 ![Regression Variance of Temperature and Heart Rate](reports/figures/regression_heartrate_temperature.png)
 
